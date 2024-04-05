@@ -1,0 +1,146 @@
+/** Header **/
+header{
+    background: linear-gradient(to bottom, #d7d7d7, #ffffff);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navHeader{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img{
+    width: 90%;
+    margin-right: 10px;
+}
+
+.opcoes{
+    display: flex;
+}
+.opcoes p{
+    color: black;
+    margin-left: 10px;
+    font-size: large;
+    text-decoration: none;
+}
+
+.opcoes p:hover{
+    color: #54c9b2;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+/** FIM: Header **/
+
+/** Body **/
+
+body{
+    font-family: "Jura", sans-serif;
+    background-color: #ffffff;
+}
+
+.caixaPrincipal{
+    height: 550px;
+    width: 800px;
+    border-radius: 76px;
+    background: #54c9b2;
+    box-shadow:  13px 13px 0px #45a592, -13px -13px 0px #63edd2;
+    margin: auto;
+}
+
+.caixaPrincipal h2{
+    color: aliceblue;
+    text-shadow: black;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.caixaPrincipal p{
+    color: aliceblue;
+    text-align: right;
+    font-size: x-large;
+    padding-right: 50px;
+    padding-top: 5%;
+
+}
+
+.caixaPrincipal article{
+    padding-top: 2%;
+}
+
+/**BOTAO DA CAIXA PRINCIPAL**/
+
+button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    font-size: larger;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #63edd2;
+    background: linear-gradient(to bottom, #63edd2, transparent);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-left: 65%;
+    margin-top: 10%;
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+    text-decoration: none;
+  }
+
+/** FIM: BOTAO **/
+
+/** FIM: Body **/
+
+
+/** Footer **/
+.rodape{
+    background: linear-gradient(to bottom, #1f1f1f, #000000);
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.rodape p{
+    color: aliceblue;
+    text-align: center;
+}
+
+.direitos p{
+    padding-top: 1%;
+    color: #dddddd;
+}
+
+.contatos{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.contatos p{
+    color: #cecece;
+    text-align: left;
+    padding-left: 2%;
+}
+
+/** FIM: Footer **/
