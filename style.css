@@ -1,3 +1,5 @@
+/** CSS DO INDEX **/
+
 /** Header **/
 header{
     background: linear-gradient(to bottom, #d7d7d7, #ffffff);
@@ -32,7 +34,7 @@ header{
 .opcoes p{
     color: black;
     margin-left: 10px;
-    font-size: large;
+    font-size: larger;
     text-decoration: none;
 }
 
@@ -48,8 +50,12 @@ header{
 /** Body **/
 
 body{
-    font-family: "Jura", sans-serif;
+    font-family: "Jura", sans-serif; /** ACHAR FONT BOA**/
     background-color: #ffffff;
+}
+
+body a{
+    text-decoration: none;
 }
 
 .caixaPrincipal{

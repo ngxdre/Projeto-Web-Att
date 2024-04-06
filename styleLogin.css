@@ -47,12 +47,17 @@ body a{
 
 .headerBox{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 2%;
+    align-items: center;
 }
 
 .headerBox span{
     font-size: xx-large;
+}
+
+.headerBox p{
+    padding-top: 3%;
 }
 
 .box{
@@ -76,14 +81,14 @@ body a{
     border: 1px black solid;
 }
 
-.botaoCadastrar{
+.botaoEntrar{
     align-items: center;
     justify-content: center;
     padding: 1%;
     background-color: #63edd2;
 }
 
-.botaoCadastrar span{
+.botaoEntrar span{
     color: white;
 }
 
