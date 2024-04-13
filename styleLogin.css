@@ -92,6 +92,10 @@ body a{
     color: white;
 }
 
+.box a{
+    margin-top: 2%;
+}
+
 /** Footer **/
 .rodape{
     background: linear-gradient(to bottom, #1f1f1f, #000000);
