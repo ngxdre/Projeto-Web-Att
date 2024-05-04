@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-ducação | Area de Cadastro</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="icon" href="/imagens/cerebro.png">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/pages/cadastro/styleCadastro.css">
+
+    <!--Fonts personalizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,7 +21,7 @@
     <header>
             <div class="logo">
                 <div class="logoBox">
-                   <img src="imagens/LOGO E-DUCACAO 1.0.png">
+                   <img src="/imagens/LOGO E-DUCACAO 1.0.png">
                 </div>
             </div>
     </header>
@@ -48,9 +55,11 @@
                 <!--DIV CAMPO CONFIRMAR SENHA-->
                 <div class="confirmaSenha"><input type="password" class="input" placeholder="Confirmar senha"></div>
 
-                <button class="botaoCadastrar"><a href="paginaLogin.html">
-                    <span>Cadastrar</span>
-                </button></a>
+                <a href="/pages/login/paginaLogin.html">
+                    <button class="botaoCadastrar">
+                        <span>Cadastrar</span>
+                    </button>
+                </a>
             </div>
 
             
@@ -58,18 +67,25 @@
         </div>
     </main>
 
-    <section class="rodape">
-        <footer>
-            <div class="direitos">
-                <p>Plataforma de educação online - PW 2024 - Todos os direitos reservados</p>
-            </div>
+    <footer>
+        <div class="direitos">
+            <p>Plataforma de educação online - PW 2024 - Todos os direitos reservados</p>
+        </div>
+
+        <div class="boxFooter">
 
             <div class="contatos">
                 <p>Contatos: (xx)x xxxxxxxx</p>
-                <p>Redes sociais: @xxxxxx</p>
+                <p>Redes sociais: @xxxxxx</p>                
             </div>
-        </footer>
-    </section>
+
+            <div class="linkGit">
+                <a href="https://github.com/ngxdre" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" class="imgGitAndre"></a>
+                <a href="https://github.com/Brenuu" target="_blank"><img src="https://cdn-icons-png.freepik.com/512/3128/3128308.png" class="imgGitBreno"></a>
+            </div>
+
+        </div>
+    </footer>
     
 </body>
 

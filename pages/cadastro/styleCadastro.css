@@ -47,17 +47,13 @@ body a{
 
 .headerBox{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 2%;
 }
 
 .headerBox span{
+    font-family: "Pixelify Sans", sans-serif;
     font-size: xx-large;
-}
-
-.headerBox p{
-    padding-top: 3%;
 }
 
 .box{
@@ -81,31 +77,35 @@ body a{
     border: 1px black solid;
 }
 
-.botaoEntrar{
+.botaoCadastrar{
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    padding: 10%;
     background-color: #63edd2;
+    cursor: pointer;
 }
 
-.botaoEntrar span{
+.botaoCadastrar span{
     color: white;
 }
 
-.box a{
-    margin-top: 2%;
-}
-
 /** Footer **/
-.rodape{
+footer{
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: linear-gradient(to bottom, #1f1f1f, #000000);
-    overflow: auto;
-    margin-top: 50px;
+    width: 100%; 
 }
 
-.rodape p{
+footer p{
     color: aliceblue;
     text-align: center;
+}
+
+.direitos{
+    
 }
 
 .direitos p{
@@ -113,15 +113,33 @@ body a{
     color: #dddddd;
 }
 
+.boxFooter{
+    display: flex;
+}
+
 .contatos{
+    display: flex;
     padding-top: 2%;
     padding-bottom: 1%;
+    width: 50%;
 }
 
 .contatos p{
     color: #cecece;
     text-align: left;
     padding-left: 2%;
+}
+
+.linkGit{
+    width: 50%;
+}
+
+.imgGitAndre{
+    width: 8%;
+}
+
+.imgGitBreno{
+    width: 8%;
 }
 
 /** FIM: Footer **/
