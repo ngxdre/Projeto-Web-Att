@@ -1,87 +1,93 @@
-function validarFormulario(event) {
-    
-    // Impede o envio do formulário para realizar validação
+const form = document.getElementById("form");
+const nomeInput = document.getElementById("nomeInput");
+const cpfInput = document.getElementById("cpfInput");
+const emailInput = document.getElementById("emailInput");
+const senhaInput = document.getElementById("senhaInput");
+const confirmaSenha_Input = document.getElementById("confirmaSenha_Input");
 
+form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    //  campos do formulário
+    //Verificar nome vazio
+    if(nomeInput.value === ""){
+        alert('Preencha seu nome!');
+        return;
+    }
 
-    const nomeInput = document.querySelector('.nome input');
-    const cpfInput = document.querySelector('.cpf input');
-    const emailInput = document.querySelector('.email input');
-    const senhaInput = document.querySelector('.senha input');
-    const confirmaSenhaInput = document.querySelector('.confirmaSenha input');
+    //Verficar cpf
+    if(cpfInput.value === "" || !validarCPF(cpfInput.value)){
+        alert('Preencha seu CPF!');
+        return;
+    }
 
-    // armazena mensagens de erro
+    //Verficar email
+    if(emailInput.value === "" || !validarEmail(emailInput.value)){
+        alert('Preencha seu Email!');
+        return;
+    }
 
-    let mensagensErro = [];
+    //Verificar senha
+    if(!validarSenha(senhaInput.value, 8)){
+        alert('A senha precisa de no minimo 8 digitos!');
+        return;
+    }
 
-    // Validações 
+    //Verificar confirmação senha
+    if(!validarConfirmar_Senha(senhaInput.value, confirmaSenha_Input.value)){
+        alert('As senhas precisam ser iguais!')
+        return;
+    }
+
+    //Se os campos estiverem corretos, envie o form
+    form.submit();
+    window.location.replace("/pages/login/paginaLogin.html");
+});
+
+
+//Valida cpf
+function validarCPF(cpf){
+    const cpfRegex = new RegExp(
+        /^\d{11}$/
+    );
+
+    if(cpfRegex.test(cpf)){
+        return true;
+    }
     
-    if (!nomeInput.value.trim()) {
-        mensagensErro.push('O campo Nome é obrigatório.');
-    }
-
-    
-    if (!cpfInput.value.trim()) {
-        mensagensErro.push('O campo CPF é obrigatório.');
-    } else if (!validarCPF(cpfInput.value)) {
-        mensagensErro.push('O CPF inserido não é válido.');
-    }
-
-   
-    if (!emailInput.value.trim()) {
-        mensagensErro.push('O campo E-mail é obrigatório.');
-    } else if (!validarEmail(emailInput.value)) {
-        mensagensErro.push('O e-mail inserido não é válido.');
-    }
-
-    if (!senhaInput.value.trim()) {
-        mensagensErro.push('O campo Senha é obrigatório.');
-    } else if (senhaInput.value.length < 6) {
-        mensagensErro.push('A senha deve ter pelo menos 6 caracteres.');
-    }
-
-    if (confirmaSenhaInput.value !== senhaInput.value) {
-        mensagensErro.push('As senhas não correspondem.');
-    }
-
-    //  mensagens de erro 
-
-    if (mensagensErro.length > 0) {
-        alert(mensagensErro.join('\n'));
-    } else {
-        
-        alert('Cadastro realizado com sucesso!');
-    }
+    return false;
 }
 
+//Valida email
+function validarEmail(email){
+    const emailRegex = new RegExp(
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    );
 
-document.querySelector('.formulario').addEventListener('submit', validarFormulario);
-
-
-function validarCPF(cpf) {
-    cpf = cpf.replace(/[^\d]/g, ''); // Remove caracteres não numéricos
-    if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
-        return false;
+    if(emailRegex.test(email)){
+        return true;
     }
 
-    const calcDigito = (soma, peso) => {
-        for (let i = 0; i < 9; i++) {
-            soma += parseInt(cpf[i]) * peso--;
-        }
-        let digito = (soma * 10) % 11;
-        return digito === 10 ? 0 : digito;
-    };
-
-    const digito1 = calcDigito(0, 10);
-    const digito2 = calcDigito(0, 11);
-
-    return digito1 === parseInt(cpf[9]) && digito2 === parseInt(cpf[10]);
+    return false;
 }
 
+// Validar senha
+function validarSenha(senha, digitos){
+    if(senha.length >= digitos){
+        //senha valida
+        return true;
+    }
 
-function validarEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+    //senha invalida
+    return false;
+}
+
+//Validar confirmação senha
+function validarConfirmar_Senha(senha, senhaConfirmada){
+    if(senhaConfirmada == senha){
+        //senha confirmada
+        return true
+    }
+
+    //senha nao confirmada
+    return false
 }

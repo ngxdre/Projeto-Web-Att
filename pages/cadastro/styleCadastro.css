@@ -2,7 +2,7 @@
 
 /** HEADER **/
 
-.logo{
+#logo{
     display: flex;
     align-items: center;
     width: 100%;
@@ -10,14 +10,14 @@
     background: linear-gradient(to bottom, #d7d7d7, #ffffff);
 }
 
-.logoBox{
+#logoBox{
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
 
-.logo img{
+#logo img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@ body a{
     text-decoration: none;
 }
 
-.conteiner{
+#conteiner{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -45,18 +45,18 @@ body a{
     align-items: center;
 }
 
-.headerBox{
+#headerBox{
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
 }
 
-.headerBox span{
+#headerBox span{
     font-family: "Pixelify Sans", sans-serif;
     font-size: xx-large;
 }
 
-.box{
+#form{
     width: 40%;
     height: 50%;
     display: flex;
@@ -68,7 +68,7 @@ body a{
     background-color: transparent;
 }
 
-.box input{
+#form input{
     width: 25em;
     height: 3em;
     margin-bottom: 5%;
@@ -77,15 +77,12 @@ body a{
     border: 1px black solid;
 }
 
-.botaoCadastrar{
+#botaoCadastrar{
     align-items: center;
     justify-content: center;
-    padding: 10%;
+    padding: 1%;
     background-color: #63edd2;
     cursor: pointer;
-}
-
-.botaoCadastrar span{
     color: white;
 }
 
@@ -104,41 +101,41 @@ footer p{
     text-align: center;
 }
 
-.direitos{
+#direitos{
     
 }
 
-.direitos p{
+#direitos p{
     padding-top: 1%;
     color: #dddddd;
 }
 
-.boxFooter{
+#boxFooter{
     display: flex;
 }
 
-.contatos{
+#contatos{
     display: flex;
     padding-top: 2%;
     padding-bottom: 1%;
     width: 50%;
 }
 
-.contatos p{
+#contatos p{
     color: #cecece;
     text-align: left;
     padding-left: 2%;
 }
 
-.linkGit{
+#linkGit{
     width: 50%;
 }
 
-.imgGitAndre{
+#imgGitAndre{
     width: 8%;
 }
 
-.imgGitBreno{
+#imgGitBreno{
     width: 8%;
 }
 
