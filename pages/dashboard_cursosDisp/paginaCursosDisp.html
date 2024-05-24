@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ducação | Dashboard</title>
+    <link rel="icon" href="/imagens/cerebro.png">
+    <link rel="stylesheet" href="/pages/dashboard_cursosDisp/styleCursosDisp.css">
+    <link rel="stylesheet" href="/reset.css">
+
+    <!--Fonts personalizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--SCRIPT JS-->
+    <script src="/pages/dashboard/scriptDashboard.js"></script>
+
+    <!--HEADER-->
+    <header>
+        <nav class="navHeader">
+            
+            <div class ="logo">
+                <img src="/imagens/LOGO E-DUCACAO 1.0.png">
+            </div>
+
+            <div class="opcoes">
+                <a href="/pages/inicial/index.html">
+                    <button class="btnLogout">
+                        <span>LOGOUT</span>
+                    </button>
+                </a>                
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--MENU LATERAL-->
+        <aside class="menu">
+            <div class="cursosMatricula">
+                <span onclick="matricula()">CURSOS <br>MATRICULADOS</span>
+            </div>
+
+            <div class="cursosDisponiveis">
+                <span onclick="disponiveis()">CURSOS <br>DISPONIVEIS</span>
+            </div>
+
+            <div class="feedbacks">
+                <span onclick="feedbacks()">FEEDBACKS</span>
+            </div>
+
+            <div class="areaProf">
+                <span onclick="areaProf()">AREA DO <br>PROFESSOR</span>
+            </div>
+
+            <div class="suporte">
+                <span onclick="suporte()">SUPORTE</span>
+            </div>
+        </aside>
+
+        <!--SEÇÃO DO CONTEUDO DO MENU-->
+        <section class="conteudo">
+           
+            <div class="headerConteudo">
+                <h1>CURSOS DISPONIVEIS</h1>
+            </div>
+
+            <div class="videos">
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=CncbN_FchQ5D7XcM&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=VWXTGFx0HliHtfnN&amp;list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="outrosVideos">
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=UqA-rR6gGLAa3pMn&amp;list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="426" height="240" src="https://www.youtube.com/embed/videoseries?si=HuTMWz_L6joMQrWd&amp;list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="direitos">
+            <p>Plataforma de educação online - PW 2024 - Todos os direitos reservados</p>
+        </div>
+
+        <div class="boxFooter">
+
+            <div class="contatos">
+                <p>Contatos: (xx)x xxxxxxxx</p>
+                <p>Redes sociais: @xxxxxx</p>                
+            </div>
+
+            <div class="linkGit">
+                <a href="https://github.com/ngxdre" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" class="imgGitAndre"></a>
+                <a href="https://github.com/Brenuu" target="_blank"><img src="https://cdn-icons-png.freepik.com/512/3128/3128308.png" class="imgGitBreno"></a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

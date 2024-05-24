@@ -133,10 +133,31 @@ main{
     cursor: pointer;
 }
 
+
 /** CONTEUDO DO LADO DIREITO**/
 .conteudo{
     width: 87%;
-    background-color: #a1a1a1
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.headerConteudo h1{
+    font-size: xx-large;
+    margin: 1%;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.noticias h1{
+    font-size: xx-large;
+    margin: 1%;
+}
+
+.conteudoNoticias{
+    background-color: #dad4d0;
+    height: 27%;
 }
 
 
